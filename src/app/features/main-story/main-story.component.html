@@ -1,0 +1,14 @@
+<app-nav>
+    <h1>Main Stroy</h1>
+</app-nav>
+<div class="grid grid-cols-3 w-fit gap-x-10 gap-y-18 px-6 mx-auto">
+    @for (experience of experienceService.experiences; track $index;let i=$index;) {
+        <app-folder [routerLink]="['/experience',i]">
+            <img class="w-[80%] h-[80%] block rounded-lg" [src]="experience.image">
+            <h2>{{experience.title}}</h2>
+            <span>- {{experience.subtitle}}</span>
+        </app-folder>
+    }
+   
+
+</div>

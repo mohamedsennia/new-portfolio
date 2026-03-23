@@ -1,0 +1,26 @@
+:host {
+    background-image: url('/assets/images/ruisseau.png');
+    background-size: 100%  100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    image-rendering: auto; /* let the browser smooth it */
+     font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:host::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url('/assets/images/ruisseau.png');
+    background-size: 100% 100%;
+      background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(2px); /* subtle softening */
+    z-index: -1;
+}

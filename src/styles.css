@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@source "../src/**/*.{html,ts}";
+@source "../src/app/**/*.component.html";
+@source "../src/app/**/*.component.ts";
+@source "../src/**/*.html";
+html{
+  overflow-x: hidden;
+}
+
+@theme {
+  /* Extend box-shadow */
+  --box-shadow-combined: 0 8px 8px -4px rgba(16, 24, 40, 0.03), 0 20px 24px -4px rgba(16, 24, 40, 0.08);
+
+
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-blur:rgba(252, 252, 253, 0.50);
+  --color-gray-25: #FCFCFD;
+  --color-gray-50: #F9FAFB;
+  --color-gray-100: #F2F4F7;
+  --color-gray-200: #E4E7EC;
+  --color-gray-300: #D0D5DD;
+  --color-gray-400: #98A2B3;
+  --color-gray-500: #667085;
+  --color-gray-600: #475467;
+  --color-gray-700: #344054;
+  --color-gray-800: #1D2939;
+  --color-gray-900: #101828;
+  --color-gray-950: #0C111D;
+
+  --color-delet-50: #FEF3F2;
+  --color-delet-100: #FEE4E2;
+  --color-delet-500: #FF4D4F;
+  --color-delet-600: #D92D20;
+
+  --color-warning-50: #FFFAEB;
+  --color-warning-100: #FEF0C7;
+  --color-warning-500: #FDB022;
+
+  --color-success-50: #ECFDF3;
+  --color-success-100: #D1FADF;
+  --color-success-200: #ABEFC6;
+  --color-success-500: #32D583;
+  --color-success-600: #039855;
+
+  --color-gray-500: #667085;
+
+  
+}
+.no-scroll{
+    overflow: hidden;
+}
+@layer utilities {
+ 
+}
+
+*{
+     font-family: "VT323", monospace;
+}
+html, desktop-body { height: 100%; }

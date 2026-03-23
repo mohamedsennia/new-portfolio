@@ -1,0 +1,14 @@
+:host{
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-bottom: 56px; 
+        color: #d29a5a;
+        position: relative;
+}
+::ng-deep h1{
+    font-size: 64px;
+    font-weight: bold;
+
+}
