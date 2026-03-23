@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, HostBinding, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { NavComponent } from '../shared/nav/nav.component';
 import { Experience } from '../../core/models/experience.model';
@@ -14,8 +14,10 @@ export class ExperiencePageComponent implements  OnInit{
   activatedRoute=inject(ActivatedRoute)
   experienceService=inject(ExperiencesService)
    experience!:Experience
+   @HostBinding('style.--backgroundImage') backgroundImage = '';
   ngOnInit(): void {
    this.experience=this.experienceService.experiences[+this.activatedRoute.snapshot.params['id']]
+   this.backgroundImage=`url(${this.experience.image})`
   }
 
 }
