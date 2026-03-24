@@ -1,0 +1,11 @@
+.element{
+    background-color: #8B8B8B;
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

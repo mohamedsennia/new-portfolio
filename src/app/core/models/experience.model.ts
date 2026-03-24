@@ -1,4 +1,12 @@
+import { Technologie } from "./technologie.model";
+
 export class Experience{
+    public get technologies(): Technologie[] {
+        return this._technologies;
+    }
+    public set technologies(value: Technologie[]) {
+        this._technologies = value;
+    }
     public get title(): string {
         return this._title;
     }
@@ -23,7 +31,7 @@ export class Experience{
     public set description(value: string) {
         this._description = value;
     }
-    constructor(private _title: string,private _subtitle: string,private _image: string, private _description: string){
+    constructor(private _title: string,private _subtitle: string,private _image: string, private _description: string,private _technologies: Technologie[]){
 
     }
 }

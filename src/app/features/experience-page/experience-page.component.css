@@ -1,0 +1,19 @@
+.descriptionHolder:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 150px;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-left-color: #E9CEA8;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-right: -20px;
+}
+:host{
+    max-height: 100vh;
+     overflow: hidden;
+     display: block;
+}

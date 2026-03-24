@@ -4,10 +4,12 @@ import { NavComponent } from '../shared/nav/nav.component';
 import { Experience } from '../../core/models/experience.model';
 import { ExperiencesService } from '../../core/services/experiences.service';
 import { SettingsService } from '../../core/services/settings.service';
+import { TextHolderComponent } from "../shared/text-holder/text-holder.component";
+import { CharacterComponent } from "../shared/character/character.component";
 
 @Component({
   selector: 'app-experience-page',
-  imports: [NavComponent],
+  imports: [NavComponent, TextHolderComponent, CharacterComponent],
   templateUrl: './experience-page.component.html',
   styleUrl: './experience-page.component.css'
 })

@@ -46,7 +46,43 @@ html{
 
   --color-gray-500: #667085;
 
-  
+  /* Brown / Sand (#d29a5a) */
+--color-sand-50: #fbf3ea;
+--color-sand-100: #f4e0c7;
+--color-sand-200: #ecd0a9;
+--color-sand-300: #e4c08b;
+--color-sand-400: #dcb06d;
+--color-sand-500: #d29a5a;
+--color-sand-600: #b9844c;
+--color-sand-700: #9f6f3f;
+--color-sand-800: #855a32;
+--color-sand-900: #6b4526;
+
+
+/* Forest Green (#3a5e29) */
+--color-forest-50: #e6efe2;
+--color-forest-100: #c8dcc0;
+--color-forest-200: #a8c79d;
+--color-forest-300: #89b27b;
+--color-forest-400: #6a9c58;
+--color-forest-500: #3a5e29;
+--color-forest-600: #314f23;
+--color-forest-700: #283f1c;
+--color-forest-800: #1f3015;
+--color-forest-900: #16210f;
+
+
+/* Dark Brown (#3E2723) */
+--color-brown-50: #f3eceb;
+--color-brown-100: #dccfcf;
+--color-brown-200: #c5b3b2;
+--color-brown-300: #ad9695;
+--color-brown-400: #967978;
+--color-brown-500: #3E2723;
+--color-brown-600: #35211e;
+--color-brown-700: #2c1b18;
+--color-brown-800: #231512;
+--color-brown-900: #1a0f0c;
 }
 .no-scroll{
     overflow: hidden;

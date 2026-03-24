@@ -1,4 +1,29 @@
 <app-nav>
     <h1>{{experience.title}}</h1>
 </app-nav>
+<div class="p-6 flex flex-col gap-10">
+    <app-text-holder>
+            <div class="flex flex-col">
+                <h2 class="inline-block text-4xl font-semibold text-brown-500">{{experience.title}}</h2>
+                <div class="flex gap-2 justify-center items-end">
+                    <span class=" text-2xl ">{{experience.subtitle}} </span>
+                    <span class=""> January 2025 - today</span>
+                </div>
+            </div>
+            
+    </app-text-holder>
+    <div class="flex justify-between items-end">
+    
+        <div class="flex items-start description flex-1 justify-end">
+            <app-text-holder class="h-fit relative descriptionHolder">
+                <p [innerHTML]="experience.description" class="max-w-200 text-lg">
 
+                </p>
+                
+            </app-text-holder>
+            <app-character class="h-170 w-100 -ml-30 -mt-10"></app-character>
+        </div>
+    </div>
+   
+    
+</div>
