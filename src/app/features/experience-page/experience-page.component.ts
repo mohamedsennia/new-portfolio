@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { NavComponent } from '../shared/nav/nav.component';
 import { Experience } from '../../core/models/experience.model';
 import { ExperiencesService } from '../../core/services/experiences.service';
+import { SettingsService } from '../../core/services/settings.service';
 
 @Component({
   selector: 'app-experience-page',
@@ -13,11 +14,12 @@ import { ExperiencesService } from '../../core/services/experiences.service';
 export class ExperiencePageComponent implements  OnInit{
   activatedRoute=inject(ActivatedRoute)
   experienceService=inject(ExperiencesService)
+  settingsService=inject(SettingsService)
    experience!:Experience
-   @HostBinding('style.--backgroundImage') backgroundImage = '';
+
   ngOnInit(): void {
    this.experience=this.experienceService.experiences[+this.activatedRoute.snapshot.params['id']]
-   this.backgroundImage=`url(${this.experience.image})`
+  this.settingsService.backgroundImage.set(`url(${this.experience.image})`)
   }
 
 }
