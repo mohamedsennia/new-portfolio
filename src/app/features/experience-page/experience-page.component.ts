@@ -6,6 +6,7 @@ import { ExperiencesService } from '../../core/services/experiences.service';
 import { SettingsService } from '../../core/services/settings.service';
 import { TextHolderComponent } from "../shared/text-holder/text-holder.component";
 import { CharacterComponent } from "../shared/character/character.component";
+import { ExperienceType } from '../../core/enums/experienceType.model';
 
 @Component({
   selector: 'app-experience-page',
@@ -23,11 +24,16 @@ export class ExperiencePageComponent implements  OnInit{
     let temp=this.experienceService.getQuestById(+this.activatedRoute.snapshot.params['id'])
     if(temp){
       this.experience=temp
+     if(this.experience.experienceType==ExperienceType.MAIN){
+       this.settingsService.backgroundImage.set(this.experience.image)
+     }else{
+      this.settingsService.backgroundImage.set(`bn.png`)
+     }
     }else{
       //route to 404
     }
    
-  this.settingsService.backgroundImage.set(`url(${this.experience.image})`)
+  
   }
 
 }

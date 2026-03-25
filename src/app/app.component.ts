@@ -17,7 +17,7 @@ export class AppComponent{
        settingsService=inject(SettingsService)
           @HostBinding('style.--backgroundImage') 
           get backgroundImage() {
-              return this.settingsService.backgroundImage();
+              return `url('assets/images/${this.settingsService.mode()}/${this.settingsService.backgroundImage()}')`;
             }
   
 }

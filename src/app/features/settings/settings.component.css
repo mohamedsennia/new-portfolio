@@ -1,0 +1,71 @@
+/* Toggle */
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: inline-flex;
+  align-items: center;
+  width: 72px;
+  height: 38px;
+  background-color: #f5e9b8;
+  border-radius: 999px;
+  padding: 4px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  box-sizing: border-box;
+}
+
+.toggle-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #f0b429;
+  border-radius: 50%;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s ease;
+  color: #fff;
+}
+
+/* Icons */
+.icon-sun,
+.icon-moon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.toggle-thumb {
+  position: relative;
+}
+
+.icon-moon {
+  opacity: 0;
+  transform: rotate(-30deg);
+  stroke: none;
+}
+
+/* Checked (dark mode) state */
+.toggle-input:checked + .toggle-label {
+  background-color: #2a2d3a;
+}
+
+.toggle-input:checked + .toggle-label .toggle-thumb {
+  transform: translateX(34px);
+  background-color: #4a5080;
+}
+
+.toggle-input:checked + .toggle-label .icon-sun {
+  opacity: 0;
+  transform: rotate(30deg);
+}
+
+.toggle-input:checked + .toggle-label .icon-moon {
+  opacity: 1;
+  transform: rotate(0deg);
+}

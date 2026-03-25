@@ -14,6 +14,6 @@ import { SettingsService } from '../../core/services/settings.service';
 export class MenuComponent {
    settingsService=inject(SettingsService)
   constructor(){
-    this.settingsService.backgroundImage.set("url('/assets/images/ruisseau.png')")
+    this.settingsService.backgroundImage.set("ruisseau.png")
   }
 }

@@ -4,7 +4,7 @@
 <div class="grid grid-cols-3 w-fit gap-x-10 gap-y-18 px-6 mx-auto">
     @for (experience of experiences; track $index;) {
         <app-folder [routerLink]="['/quest',experience.id]">
-            <img class="w-[80%] h-[80%] block rounded-lg" [src]="experience.image">
+            <img class="w-[80%] h-[80%] block rounded-lg" [src]="'./assets/images/'+experience.image">
             <h2>{{experience.title}}</h2>
             <span>- {{experience.subtitle}}</span>
         </app-folder>

@@ -7,7 +7,10 @@
                 <h2 class="inline-block text-4xl font-semibold text-brown-500">{{experience.title}}</h2>
                 <div class="flex gap-2 justify-center items-end">
                     <span class=" text-2xl ">{{experience.subtitle}} </span>
-                    <span class=""> January 2025 - today</span>
+                    @if (experience.date) {
+                        <span >{{experience.date}}</span>
+                    }
+                    
                 </div>
             </div>
             
@@ -15,7 +18,7 @@
     <div class="flex justify-between items-end">
     
         <div class="flex items-start description flex-1 justify-end">
-            <app-text-holder class="h-fit relative descriptionHolder">
+            <app-text-holder class="h-fit relative descriptionHolder min-h-45 flex">
                 <p [innerHTML]="experience.description" class="max-w-200 text-lg">
 
                 </p>
