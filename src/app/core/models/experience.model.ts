@@ -1,12 +1,20 @@
+import { ExperienceType } from "../enums/experienceType.model";
 import { Technologie } from "./technologie.model";
 
 export class Experience{
-    public get technologies(): Technologie[] {
-        return this._technologies;
+    public get id() {
+        return this._id;
     }
-    public set technologies(value: Technologie[]) {
-        this._technologies = value;
+    public set id(value) {
+        this._id = value;
     }
+    public get experienceType(): ExperienceType {
+        return this._experienceType;
+    }
+    public set experienceType(value: ExperienceType) {
+        this._experienceType = value;
+    }
+
     public get title(): string {
         return this._title;
     }
@@ -31,7 +39,7 @@ export class Experience{
     public set description(value: string) {
         this._description = value;
     }
-    constructor(private _title: string,private _subtitle: string,private _image: string, private _description: string,private _technologies: Technologie[]){
+    constructor(private _id:number,private _title: string,private _subtitle: string,private _image: string, private _description: string,private _experienceType: ExperienceType){
 
     }
 }

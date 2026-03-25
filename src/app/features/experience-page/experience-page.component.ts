@@ -20,7 +20,13 @@ export class ExperiencePageComponent implements  OnInit{
    experience!:Experience
 
   ngOnInit(): void {
-   this.experience=this.experienceService.experiences[+this.activatedRoute.snapshot.params['id']]
+    let temp=this.experienceService.getQuestById(+this.activatedRoute.snapshot.params['id'])
+    if(temp){
+      this.experience=temp
+    }else{
+      //route to 404
+    }
+   
   this.settingsService.backgroundImage.set(`url(${this.experience.image})`)
   }
 

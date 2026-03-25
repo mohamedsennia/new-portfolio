@@ -1,8 +1,8 @@
 <app-nav>
-    <h1>Main Stroy</h1>
+    <h1>Side quests</h1>
 </app-nav>
 <div class="grid grid-cols-3 w-fit gap-x-10 gap-y-18 px-6 mx-auto">
-    @for (experience of experiences; track $index) {
+    @for (experience of experiences; track $index;) {
         <app-folder [routerLink]="['/quest',experience.id]">
             <img class="w-[80%] h-[80%] block rounded-lg" [src]="experience.image">
             <h2>{{experience.title}}</h2>
