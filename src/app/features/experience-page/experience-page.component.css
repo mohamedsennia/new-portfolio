@@ -14,6 +14,9 @@
 }
 :host{
     max-height: 100vh;
-     overflow: hidden;
+
      display: block;
+}
+.holder{
+	width: min(80vw,800px);
 }

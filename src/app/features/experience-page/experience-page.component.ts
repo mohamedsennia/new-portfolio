@@ -7,10 +7,11 @@ import { SettingsService } from '../../core/services/settings.service';
 import { TextHolderComponent } from "../shared/text-holder/text-holder.component";
 import { CharacterComponent } from "../shared/character/character.component";
 import { ExperienceType } from '../../core/enums/experienceType.model';
+import { TypewriterDirective } from '../../core/directives/typewriter.directive';
 
 @Component({
   selector: 'app-experience-page',
-  imports: [NavComponent, TextHolderComponent, CharacterComponent],
+  imports: [NavComponent, TextHolderComponent, CharacterComponent,TypewriterDirective],
   templateUrl: './experience-page.component.html',
   styleUrl: './experience-page.component.css'
 })
@@ -32,6 +33,7 @@ export class ExperiencePageComponent implements  OnInit{
     }else{
       //route to 404
     }
+    
    
   
   }
