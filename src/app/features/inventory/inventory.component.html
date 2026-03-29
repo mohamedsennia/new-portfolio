@@ -7,13 +7,13 @@
             <ul>
                 <li class="element"></li>
                 <li class="element" >
-                    <img src="./assets/images/veste.png">
+                    <img class="w-full h-full" src="./assets/images/veste.png">
                 </li>
                 <li class="element">
-                    <img src="./assets/images/jeans.png">
+                    <img class="w-full h-full" src="./assets/images/jeans.png">
                 </li>
                 <li class="element">
-                    <img src="./assets/images/sneakers.png">
+                    <img class="w-full h-full" src="./assets/images/sneakers.png">
                 </li>
             </ul>
             <div class="h-49 w-48 bg-[#8B8B8B]">
@@ -23,7 +23,7 @@
         <div class="flex flex-wrap gap-2 mt-8">
             @for (technologie of technologies; track $index) {
                 <div class="element" [appTooltip]="technologie.name">
-                    <img [src]="technologie.logo" [alt]="technologie.name">
+                    <img class="w-[90%]" [src]="technologie.logo" [alt]="technologie.name">
                 </div>
             }
             

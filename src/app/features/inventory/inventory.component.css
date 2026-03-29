@@ -3,6 +3,9 @@
     height: 40px;
     width: 40px;
     display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 ul{
     display: flex;
@@ -10,8 +13,8 @@ ul{
     gap: 12px;
 }
 img{
-    height: 100%;
-    width: 100%;
+
+    width: 50%;
 }
 .tooltip {
   position: fixed;
