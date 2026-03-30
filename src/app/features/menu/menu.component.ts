@@ -15,6 +15,6 @@ import { ButtonSoundEffectDirective } from '../../core/directives/buttonSoundeEf
 export class MenuComponent {
    settingsService=inject(SettingsService)
   constructor(){
-    this.settingsService.backgroundImage.set("ruisseau.png")
+    this.settingsService.backgroundImage.set("ruisseau.webp")
   }
 }

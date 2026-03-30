@@ -5,7 +5,7 @@ import { ExperienceType } from "../enums/experienceType.model";
 @Injectable({providedIn:'root'})
 export class ExperiencesService{
    private experiences: Experience[] = [
-        new Experience(1, "Bachelor's degree","Software and Information Systems Engineering",'usthb.png',`
+        new Experience(1, "Bachelor's degree","Software and Information Systems Engineering",'usthb.webp',`
             A highly practical, project-oriented degree focused on the full Software Development Life Cycle (SDLC). The ISIL track is designed to produce industry-ready engineers capable of architecting robust information systems and scalable software solutions.
             Key Competencies:
                 <ul>
@@ -16,7 +16,7 @@ export class ExperiencesService{
                 </ul>
             `,ExperienceType.MAIN,"Septembre 2018-September 2021"),
 
-        new Experience(2, "Master's degree","Visual computing",'usthb.png',`
+        new Experience(2, "Master's degree","Visual computing",'usthb.webp',`
             A research and development-focused program specializing in the lifecycle of visual data—from acquisition and processing to analysis and synthesis. This Master's degree bridges the gap between high-level mathematics and practical software implementation, providing a deep understanding of how machines perceive and interact with the physical world.
             Key Competencies:
                 <ul>
@@ -27,7 +27,7 @@ export class ExperiencesService{
                 </ul>
             `,ExperienceType.MAIN,"October 2021-July-2023"),
 
-        new Experience(3, "Assistant engineer level 2","Algerian supreme court",'cs.png',`
+        new Experience(3, "Assistant engineer level 2","Algerian supreme court",'cs.webp',`
             <ul>
                 <li>- Developed and maintained an HR management web application used internally by court staff.</li>
                 <li>- Designed and implemented a legal case document archiving system using Spring Boot, improving traceability and organization of case files.</li>
@@ -35,7 +35,7 @@ export class ExperiencesService{
             </ul>
             `,ExperienceType.MAIN,"May 2023-January-2025"),
 
-        new Experience(4, "Full stack developper","Yaldinine",'yalidine.png',`
+        new Experience(4, "Full stack developper","Yaldinine",'yalidine.webp',`
             <ul>
                 <li> -Participated in the functional and technical design of a SaaS platform (UML, database modeling, definition of business workflows).</li>
                 <li> -Developed warehouse and fulfillment management modules: inventory, movements, client requests, and operational tracking.</li>
@@ -45,7 +45,7 @@ export class ExperiencesService{
             </ul>
             `,ExperienceType.MAIN,"January 2025-Present"),
 
-        new Experience(5, "Real-Time Messaging Application","","yapper.png",`
+        new Experience(5, "Real-Time Messaging Application","","yapper.webp",`
             <ul>
                 <li>Built a real-time chat application using Spring Boot, Angular, and WebSockets.</li>
                 <li>Implemented bi-directional communication, user authentication, and authorization using JWT.</li>
@@ -53,7 +53,7 @@ export class ExperiencesService{
             </ul>`,
             ExperienceType.SIDE),
 
-        new Experience(6, "Price Tracker Platform","","tracker.png",`
+        new Experience(6, "Price Tracker Platform","","tracker.webp",`
             <ul>
                 <li>Full-stack application allowing users to track price changes for products on eBay.fr.</li>
                 <li>Backend built with Spring Boot for data scraping, processing, and scheduling.</li>
@@ -63,7 +63,7 @@ export class ExperiencesService{
             </ul>`,
             ExperienceType.SIDE),
 
-        new Experience(7, "Multiplayer Blackjack Game","","blackjack.png",`
+        new Experience(7, "Multiplayer Blackjack Game","","blackjack.webp",`
             <ul>
                 <li>Developed a real-time multiplayer Blackjack game using Spring Boot, Angular, and WebSockets.</li>
                 <li>Implemented game rooms, session management, and synchronized game state across players.</li>

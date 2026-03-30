@@ -15,7 +15,7 @@ import { Experience } from '../../core/models/experience.model';
 export class MainStoryComponent implements OnInit{
    experiences:Experience[]=[]
   ngOnInit(): void {
-    this.settingsService.backgroundImage.set("ruisseau.png")
+    this.settingsService.backgroundImage.set("ruisseau.webp")
     this.experiences=this.experienceService.getMainQuests()
   }
   private settingsService=inject(SettingsService)

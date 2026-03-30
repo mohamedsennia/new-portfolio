@@ -2,7 +2,7 @@ import { effect, Injectable, signal } from "@angular/core";
 
 @Injectable({providedIn:'root'})
 export class SettingsService{
-    backgroundImage=signal("ruisseau.png")
+    backgroundImage=signal("ruisseau.webp")
     mode=signal('light')
     constructor(){
        let storageMode= localStorage.getItem('mode')

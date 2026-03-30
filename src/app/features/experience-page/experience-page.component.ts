@@ -28,7 +28,7 @@ export class ExperiencePageComponent implements  OnInit{
      if(this.experience.experienceType==ExperienceType.MAIN){
        this.settingsService.backgroundImage.set(this.experience.image)
      }else{
-      this.settingsService.backgroundImage.set(`bn.png`)
+      this.settingsService.backgroundImage.set(`bn.webp`)
      }
     }else{
       //route to 404

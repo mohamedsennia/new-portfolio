@@ -15,7 +15,7 @@ import { Experience } from '../../core/models/experience.model';
 export class SideQuestsComponent {
   experiences:Experience[]=[]
    ngOnInit(): void {
-     this.settingsService.backgroundImage.set("bn.png")
+     this.settingsService.backgroundImage.set("bn.webp")
      this.experiences=this.experienceService.getSideQuests()
    }
    private settingsService=inject(SettingsService)
