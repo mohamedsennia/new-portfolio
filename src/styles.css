@@ -90,7 +90,10 @@ html{
 @layer utilities {
  
 }
-
+body{
+  display: block;
+  min-width: fit-content
+}
 *{
      font-family: "VT323", monospace;
 }
