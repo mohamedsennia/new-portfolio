@@ -2,6 +2,12 @@ import { ExperienceType } from "../enums/experienceType.model";
 import { Technologie } from "./technologie.model";
 
 export class Experience{
+    public get link(): string|undefined {
+        return this._link;
+    }
+    public set link(value: string) {
+        this._link = value;
+    }
     public get date(): string|undefined {
         return this._date;
     }
@@ -45,7 +51,7 @@ export class Experience{
     public set description(value: string) {
         this._description = value;
     }
-    constructor(private _id:number,private _title: string,private _subtitle: string,private _image: string, private _description: string,private _experienceType: ExperienceType,private _date?: string){
+    constructor(private _id:number,private _title: string,private _subtitle: string,private _image: string, private _description: string,private _experienceType: ExperienceType,private _link?: string,private _date?: string){
 
     }
 }
